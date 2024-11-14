@@ -1,0 +1,42 @@
+
+main{
+    background-color: #222529;
+    color: orange;
+     
+}
+
+.fundo{
+    background-color: #222529;
+}
+
+.card-body{
+    background-color: #222529;
+}
+
+.card-body h5{
+    color: orange;
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+    background-image: url(footer.png);
+    color: white;
+    text-align: center;
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(12,30px);
+}
+
+
+footer img{
+    grid-column: 4/5;
+    grid-row: 5/7;
+    width: 300px;
+}

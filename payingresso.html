@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="ing.css">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img width="70px" src="logo-fundoazul-300.png" alt="">l</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="payingresso.html">ingressos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="Sessão" aria-expanded="false">
+              Sessão
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" aria-disabled="true">Em cartaz</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Buscar Sessão" aria-label="Search">
+          <button type="button" class="btn btn-outline-warning">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="fundo">
+  <main>
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="validationCustom01" value="Jão" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom02" class="form-label">Sobre nome</label>
+          <input type="text" class="form-control" id="validationCustom02" value="Silva" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustomUsername" class="form-label">Seu Email</label>
+          <div class="input-group has-validation">
+            <span class="input-group-text" id="inputGroupPrepend">@</span>
+            <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose user email.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="validationCustom03" class="form-label">N do cartão</label>
+          <input type="text" class="form-control" id="validationCustom03" required>
+          <div class="invalid-feedback">
+            Por favor adicione um cartão valido
+          </div>
+        </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Fileira</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option selected disabled value="">Procurar...</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+            <option>E</option>
+            <option>F</option>
+          </select>
+          <div class="invalid-feedback">
+            Selecione uma fileira valida.
+          </div>
+        </div>
+        <div class="col-md-3">
+            <label for="validationCustom04" class="form-label">Cadeira</label>
+            <select class="form-select" id="validationCustom04" required>
+              <option selected disabled value="">Procurar</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+            </select>
+            <div class="invalid-feedback">
+              Selecione uma fileira valida.
+            </div>
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+            <label class="form-check-label" for="invalidCheck">
+              Aceite os termos e condições
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+            <button type="button" class="btn btn-outline-warning">Comprar ingresso</button>
+        </div>
+      </form>
+      <div class="d-flex justify-content-center">
+        <h2 class="">Veja tamben</h2>
+    </div>
+    <div class="container text-center">
+        <div class="row justify-content-center"> <!-- Adicionando "justify-content-center" para centralizar os cards na linha -->
+        
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4"> <!-- Usando colunas responsivas -->
+                <div class="card" >
+                    <img src="cardds/zMFAdj30K84Sz90bCd6ePwiAO37.webp" class="card-img-top" alt="Bolsa">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">TULSA KING</h5>
+                        <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                <div class="card" >
+                    <img src="cardds/dU05fLDIMBggFIuhpV7IATP5x4j.webp" class="card-img-top" alt="Calça">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sem Refugio</h5>
+                        <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                <div class="card" >
+                    <img src="cardds/i77OInTKcrnRlAozFOaB6D5mk15.webp" class="card-img-top" alt="Calçados">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Sing thiller</h5>
+                        <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+                <div class="card" >
+                    <img src="cardds/vAWbuHR9u9mHI9CjP3JBpRxtdRZ.webp" class="card-img-top" alt="Camiseta">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Lioness</h5>
+                        <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+              <div class="card" >
+                  <img src="cardds/kkck5DiLrGkqUDzjGQrxgD6BXVJ.webp" class="card-img-top" alt="Camiseta">
+                  <div class="card-body">
+                      <h5 class="card-title text-center">Terrifier 2</h5>
+                      <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+            <div class="card" >
+                <img src="cardds/fTGJWXuFDcRSIVPgQLbxziGquOC.webp" class="card-img-top" alt="Camiseta">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Venom</h5>
+                    <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+          <div class="card" >
+              <img src="cardds/lkWYrzLIclGj56r4NJxuWeisK9R.webp" class="card-img-top" alt="Camiseta">
+              <div class="card-body">
+                  <h5 class="card-title text-center">BAD BOYS</h5>
+                  <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+              </div>
+          </div>
+      </div>
+      <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+        <div class="card" >
+            <img src="cardds/rxT7rVM4oLODCzdkkMPWGPMTSt3.webp" class="card-img-top" alt="Camiseta">
+            <div class="card-body">
+                <h5 class="card-title text-center">American</h5>
+                <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+        <div class="card" >
+            <img src="cardds/fTGJWXuFDcRSIVPgQLbxziGquOC.webp" class="card-img-top" alt="Camiseta">
+            <div class="card-body">
+                <h5 class="card-title text-center">Venom</h5>
+                <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+      <div class="card" >
+          <img src="cardds/lkWYrzLIclGj56r4NJxuWeisK9R.webp" class="card-img-top" alt="Camiseta">
+          <div class="card-body">
+              <h5 class="card-title text-center">BAD BOYS</h5>
+              <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+          </div>
+      </div>
+  </div>
+  <div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+    <div class="card" >
+        <img src="cardds/rxT7rVM4oLODCzdkkMPWGPMTSt3.webp" class="card-img-top" alt="Camiseta">
+        <div class="card-body">
+            <h5 class="card-title text-center">American</h5>
+            <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+        </div>
+    </div>
+</div>
+<div class="col-12 col-sm-6 col-md-4 col-lg-2 mb-4">
+    <div class="card" >
+        <img src="cardds/rxT7rVM4oLODCzdkkMPWGPMTSt3.webp" class="card-img-top" alt="Camiseta">
+        <div class="card-body">
+            <h5 class="card-title text-center">American</h5>
+            <button type="button" class="btn btn-warning"><a href="payingresso.html">Comprar ingresso</a></button>
+        </div>
+    </div>
+</div>
+        </div>
+      </div>
+  </main>
+</div>
+</body>
+<footer>
+<img src="logo-fundoazul-300.png" alt="">
+</footer>
+</dir>
+</html>
+</div>
