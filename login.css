@@ -1,0 +1,26 @@
+main{
+    background-color: #222529;
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(12,90px);
+}
+
+main form{
+    grid-column: 5/12;
+    grid-row: 3/6;
+    color: orange;
+}
+
+main form  .form-control{
+    background-color: rgb(93, 93, 99);
+}
+
+
+main img{
+    grid-column: 5/8;
+    grid-row: 2/3;
+}
+form button a{
+    color: orange;
+    text-decoration: none;
+}
